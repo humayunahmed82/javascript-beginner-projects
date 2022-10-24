@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/tailwind.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- main Body Start -->
+    <div
+      class="bg-sky-300 h-screen w-full flex justify-center items-center flex-col"
+    >
+      <!-- Wrapper Start  -->
+      <div class="w-[400px] bg-white rounded-lg px-6 pt-5 pb-6">
+        <!-- Header Start -->
+        <header class="space-y-2">
+          <h2 class="text-2xl font-semibold">Price Range</h2>
+          <p class="text-base">Use Slider or enter min and max width</p>
+        </header>
+        <!-- Header End -->
+
+        <!-- Price Boxr Start -->
+        <div class="w-full flex mt-8 mb-9">
+          <div class="price-input">
+            <label for="" class="capitalize">min</label>
+            <input
+              class="input-min input-field"
+              type="number"
+              value="250"
+              step="10"
+            />
+          </div>
+          <div class="w-32 flex items-center justify-center text-xl">-</div>
+          <div class="price-input">
+            <label for="" class="capitalize">max</label>
+            <input
+              class="input-max input-field"
+              type="number"
+              value="750"
+              step="10"
+            />
+          </div>
+        </div>
+        <!-- Price Boxr End -->
+
+        <!-- Slider Boxr Start -->
+        <div class="slider">
+          <div class="progress"></div>
+        </div>
+        <!-- Slider Boxr End -->
+
+        <!-- Range Input Start -->
+        <div class="range-input">
+          <input
+            type="range"
+            class="range-min"
+            min="0"
+            max="1000"
+            value="250"
+          />
+          <input
+            type="range"
+            class="range-max"
+            min="0"
+            max="1000"
+            value="750"
+          />
+        </div>
+        <!-- Range Input End -->
+      </div>
+      <!-- Wrapper End  -->
+    </div>
+    <!-- main Body End -->
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
